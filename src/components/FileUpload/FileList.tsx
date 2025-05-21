@@ -16,7 +16,7 @@ export function FileList({ className }: FileListProps) {
   }
 
   return (
-    <div className={cn("space-y-2", className)}>
+    <div className={cn("space-y-2 p-3 border border-gray-200 rounded-md", className)}>
       {files.map(file => (
         <FileItem key={file.id} file={file} className="relative" />
       ))}
